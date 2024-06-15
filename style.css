@@ -1,0 +1,16 @@
+:root{
+    --main-bg-color: white;
+}
+
+body {
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+  }
+  
+  #medicamento-form {
+    margin-bottom: 30px;
+  }
+  
