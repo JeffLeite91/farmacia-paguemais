@@ -1,0 +1,22 @@
+{
+  "medicamentos": [
+    {
+      "id": "1",
+      "nome": "Paracetamol",
+      "descricao": "Analgésico e antipirético",
+      "preco": 10.5
+    },
+    {
+      "id": "bb22",
+      "nome": "Dipirona",
+      "descricao": "Analgésico e antitérmico",
+      "preco": 12.9
+    },
+    {
+      "id": "cb0a",
+      "nome": "Ibuprofeno ",
+      "descricao": "Anti-inflamatório",
+      "preco": 20
+    }
+  ]
+}
