@@ -1,12 +1,6 @@
 {
   "medicamentos": [
     {
-      "id": "1",
-      "nome": "Paracetamol",
-      "descricao": "Analgésico e antipirético",
-      "preco": 10.5
-    },
-    {
       "id": "bb22",
       "nome": "Dipirona",
       "descricao": "Analgésico e antitérmico",
@@ -17,6 +11,24 @@
       "nome": "Ibuprofeno ",
       "descricao": "Anti-inflamatório",
       "preco": 20
+    },
+    {
+      "id": "46ad",
+      "nome": "Paracetamol",
+      "descricao": "Analgésico",
+      "preco": 14.5
+    },
+    {
+      "id": "b798",
+      "nome": "Remedio 2",
+      "descricao": "lorem ",
+      "preco": 12
+    },
+    {
+      "id": "f1da",
+      "nome": "Dipirona 2",
+      "descricao": "Analgésico",
+      "preco": 12.5
     }
   ]
 }

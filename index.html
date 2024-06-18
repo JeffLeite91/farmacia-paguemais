@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Farmácias Pague Mais</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="">
-  <div class="container mt-5">
-    <h1 class="text-center">Farmácia Pague Mais</h1>
-    <div id="alert-container"></div>
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Adicionar Medicamento</h2>
-        <form id="medicamento-form">
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="nome" required>
-          </div>
-          <div class="form-group">
-            <label for="descricao">Descrição</label>
-            <input type="text" class="form-control" id="descricao" required>
-          </div>
-          <div class="form-group">
-            <label for="preco">Preço</label>
-            <input type="number" step="0.01" class="form-control" id="preco" required>
-          </div>
-          <button type="submit" class="btn btn-primary">Adicionar</button>
-        </form>
-      </div>
-      <div class="col-md-6">
-        <h2>Lista de Medicamentos</h2>
-        <ul id="medicamento-list" class="list-group"></ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmácias Pague Mais</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Farmácia Pague Mais</h1>
+      <div id="alert-container"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Adicionar Medicamento</h2>
+          <form id="medicamento-form">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" required />
+            </div>
+            <div class="form-group">
+              <label for="descricao">Descrição</label>
+              <input type="text" class="form-control" id="descricao" required />
+            </div>
+            <div class="form-group">
+              <label for="preco">Preço</label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                id="preco"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Lista de Medicamentos</h2>
+          <ul id="medicamento-list" class="list-group"></ul>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

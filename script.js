@@ -1,9 +1,7 @@
-const apiUrl = 'http://localhost:3000/medicamentos';
 
-document.addEventListener('DOMContentLoaded', () => {
-  fetchMedicamentos();
-  document.getElementById('medicamento-form').addEventListener('submit', adicionarMedicamento);
-});
+// Link da API:
+
+const apiUrl = 'http://localhost:3000/medicamentos';
 
 async function fetchMedicamentos() {
   const response = await fetch(apiUrl);
@@ -14,7 +12,7 @@ async function fetchMedicamentos() {
     const medicamentoItem = document.createElement('li');
     medicamentoItem.className = 'list-group-item';
     medicamentoItem.innerHTML = `
-      <strong>${medicamento.nome}</strong> - ${medicamento.descricao} - R$${medicamento.preco.toFixed(2)}
+      <strong>${medicamento.nome}</strong> - ${medicamento.descricao}  - R$${medicamento.preco.toFixed(2)}
       <button class="btn btn-danger btn-sm float-right" onclick="deletarMedicamento(${medicamento.id})">Deletar</button>
       <button class="btn btn-info btn-sm float-right mr-2" onclick="editarMedicamento(${medicamento.id})">Editar</button>
     `;
@@ -58,14 +56,35 @@ async function deletarMedicamento(id) {
   }
 }
 
+// async function deletarMedicamento(id) {
+//   try {
+//     const response = await fetch(`${apiUrl}/${id}`, {
+//       method: 'DELETE'
+//     });
+
+//     if (response.ok) {
+//       fetchMedicamentos();
+//       showAlert('Medicamento deletado com sucesso!', 'success');
+//     } else {
+//       const errorMessage = await response.text();
+//       console.error('Erro ao deletar medicamento:', errorMessage);
+//       showAlert('Erro ao deletar medicamento.', 'danger');
+//     }
+//   } catch (error) {
+//     console.error('Erro ao fazer a requisição de deleção:', error);
+//     showAlert('Erro ao deletar medicamento.', 'danger');
+//   }
+// }
+
+
 function editarMedicamento(id) {
   // Implementar lógica de edição aqui
   // Sei fazer essa parte não kkk...
 }
 
 function showAlert(message, type) {
-  const alertContainer = document.getElementById('alert-container');
   const alert = document.createElement('div');
+  const alertContainer = document.getElementById('alert-container');  
   alert.className = `alert alert-${type}`;
   alert.textContent = message;
   alertContainer.appendChild(alert);
@@ -73,3 +92,10 @@ function showAlert(message, type) {
     alert.remove();
   }, 3000);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  fetchMedicamentos();
+  document.getElementById('medicamento-form').addEventListener('submit', adicionarMedicamento);
+});
+
+
