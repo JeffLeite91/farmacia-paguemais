@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 :root{
     --main-bg-color: white;
 }
 
 body {
     background-color: #f8f9fa;
+   font-family: "Ubuntu", sans-serif;
   }
-  
-  h1 {
-    margin-bottom: 30px;
-  }
+
+ h4{
+  text-shadow: black;
+  font-weight: 900;
+ }  
   
   #medicamento-form {
     margin-bottom: 30px;
   }
-  
+
+  li{
+    list-style-type: none !important;
+  }
+

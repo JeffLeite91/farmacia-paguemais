@@ -29,6 +29,12 @@
       "nome": "Dipirona 2",
       "descricao": "Analgésico",
       "preco": 12.5
+    },
+    {
+      "id": "2cf4",
+      "nome": "Remedio2",
+      "descricao": "Passa a dor",
+      "preco": 12
     }
   ]
 }
