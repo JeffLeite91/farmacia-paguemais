@@ -22,3 +22,11 @@ body {
     list-style-type: none !important;
   }
 
+  nav > ul{
+    display: flex;
+    align-items: center;
+    align-content: space-between !important;
+    justify-content: flex-start;
+    text-decoration: none;
+    list-style: none;
+  }
