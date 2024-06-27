@@ -11,10 +11,11 @@ async function fetchMedicamentos() {
     medicamentoItem.className = 'list-group-item';
     medicamentoItem.innerHTML = `
       <strong>${medicamento.nome}</strong> - ${medicamento.descricao} - R$${medicamento.preco.toFixed(2)}
-      <button class="btn btn-danger btn-sm float-right" onclick="deletarMedicamento(${medicamento.id})">Deletar</button>
+      <button class="btn btn-danger btn-sm float-right" id="${medicamento.id}" onclick="deletarMedicamento('${medicamento.id}')">Deletar</button>
       <button class="btn btn-info btn-sm float-right mr-2" onclick="editarMedicamento(${medicamento.id})">Editar</button>
     `;
     medicamentoList.appendChild(medicamentoItem);
+    
   });
 }
 
@@ -42,6 +43,7 @@ async function adicionarMedicamento(event) {
 }
 
 async function deletarMedicamento(id) {
+  console.log(id);
   const response = await fetch(`${apiUrl}/${id}`, {
     method: 'DELETE'
   });
@@ -55,8 +57,8 @@ async function deletarMedicamento(id) {
 }
 
 function editarMedicamento(id) {
-  // Implementar lógica de edição aqui
-  // Sei fazer essa parte não kkk...
+  
+  
 }
 
 function showAlert(message, type) {
