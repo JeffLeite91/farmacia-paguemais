@@ -35,3 +35,10 @@ body {
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
   }
+
+  .image-test\:hover{
+    transition: 0.3ms;
+    width: 200px;
+    height: 200px;
+
+  }

@@ -1,3 +1,10 @@
 {
-  "medicamentos": []
+  "medicamentos": [
+    {
+      "id": "0e87",
+      "nome": "remedio",
+      "descricao": "akljsnbdjkalsd",
+      "preco": 12.5
+    }
+  ]
 }
